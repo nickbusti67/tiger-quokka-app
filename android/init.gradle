@@ -1,0 +1,21 @@
+// Force Gradle to use specific configurations to prevent deadlocks and timeouts
+gradle.projectsLoaded {
+    rootProject.allprojects {
+        buildscript {
+            repositories {
+                google()
+                mavenCentral()
+            }
+        }
+        repositories {
+            google()
+            mavenCentral()
+        }
+    }
+}
+
+// Force daemon timeout settings
+gradle.startParameter.systemPropertiesArgs.putAll([
+    "org.gradle.daemon.idletimeout": "10000",
+    "org.gradle.daemon": "true"
+])
