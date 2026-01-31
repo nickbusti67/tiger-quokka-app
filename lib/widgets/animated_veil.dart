@@ -113,7 +113,7 @@ class _AnimatedVeilState extends State<AnimatedVeil>
                         begin: Alignment.centerRight,
                         end: Alignment.centerLeft,
                         colors: [
-                          AppTheme.primaryDark.withValues(alpha: 0.95),
+                          AppTheme.primaryDark.withOpacity(0.95),
                           AppTheme.primaryDeep,
                         ],
                       ),
@@ -136,7 +136,7 @@ class _AnimatedVeilState extends State<AnimatedVeil>
                         begin: Alignment.centerLeft,
                         end: Alignment.centerRight,
                         colors: [
-                          AppTheme.primaryDark.withValues(alpha: 0.95),
+                          AppTheme.primaryDark.withOpacity(0.95),
                           AppTheme.primaryDeep,
                         ],
                       ),
@@ -154,8 +154,8 @@ class _AnimatedVeilState extends State<AnimatedVeil>
                     decoration: BoxDecoration(
                       gradient: RadialGradient(
                         colors: [
-                          AppTheme.goldPrimary.withValues(alpha: 0.3 * _glowAnimation.value),
-                          AppTheme.goldPrimary.withValues(alpha: 0.1 * _glowAnimation.value),
+                          AppTheme.goldPrimary.withOpacity(0.3 * _glowAnimation.value),
+                          AppTheme.goldPrimary.withOpacity(0.1 * _glowAnimation.value),
                           Colors.transparent,
                         ],
                         stops: const [0.0, 0.3, 1.0],
@@ -183,7 +183,7 @@ class _AnimatedVeilState extends State<AnimatedVeil>
                         color: AppTheme.goldPrimary,
                         boxShadow: [
                           BoxShadow(
-                            color: AppTheme.goldPrimary.withValues(alpha: 0.5),
+                            color: AppTheme.goldPrimary.withOpacity(0.5),
                             blurRadius: 10,
                             spreadRadius: 2,
                           ),
@@ -272,7 +272,7 @@ class _VeilOpeningTextState extends State<VeilOpeningText>
                 color: AppTheme.goldLight,
                 shadows: [
                   Shadow(
-                    color: AppTheme.goldPrimary.withValues(alpha: 0.5),
+                    color: AppTheme.goldPrimary.withOpacity(0.5),
                     blurRadius: 20,
                   ),
                 ],
