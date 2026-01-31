@@ -16,7 +16,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.darvin.animeconnesse"
-    compileSdk = 33
+    compileSdk = 35
     ndkVersion = "27.0.12077973"
 
     compileOptions {
