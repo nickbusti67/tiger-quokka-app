@@ -80,7 +80,7 @@ class _CodexScreenState extends State<CodexScreen> {
                 color: AppTheme.surfaceCard,
                 borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                 border: Border.all(
-                  color: AppTheme.goldPrimary.withValues(alpha: 0.3),
+                  color: AppTheme.goldPrimary.withOpacity( 0.3),
                 ),
               ),
               child: const Icon(
@@ -114,10 +114,10 @@ class _CodexScreenState extends State<CodexScreen> {
         Container(
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
-            color: AppTheme.surfaceCard.withValues(alpha: 0.5),
+            color: AppTheme.surfaceCard.withOpacity( 0.5),
             borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
             border: Border.all(
-              color: AppTheme.primaryMedium.withValues(alpha: 0.2),
+              color: AppTheme.primaryMedium.withOpacity( 0.2),
             ),
           ),
           child: Row(
@@ -150,7 +150,7 @@ class _CodexScreenState extends State<CodexScreen> {
         color: AppTheme.surfaceCard,
         borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
         border: Border.all(
-          color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+          color: AppTheme.primaryMedium.withOpacity( 0.3),
         ),
       ),
       child: Column(
@@ -179,10 +179,10 @@ class _CodexScreenState extends State<CodexScreen> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
-        color: symbol.color.withValues(alpha: 0.1),
+        color: symbol.color.withOpacity( 0.1),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: symbol.color.withValues(alpha: 0.3),
+          color: symbol.color.withOpacity( 0.3),
         ),
       ),
       child: Row(
@@ -260,7 +260,7 @@ class _CodexScreenState extends State<CodexScreen> {
         ),
         border: Border(
           top: BorderSide(
-            color: page.symbol.color.withValues(alpha: 0.5),
+            color: page.symbol.color.withOpacity( 0.5),
             width: 2,
           ),
         ),
@@ -327,7 +327,7 @@ class _CodexScreenState extends State<CodexScreen> {
                     color: AppTheme.surfaceCard,
                     borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                     border: Border.all(
-                      color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+                      color: AppTheme.primaryMedium.withOpacity( 0.3),
                     ),
                   ),
                   child: Text(
