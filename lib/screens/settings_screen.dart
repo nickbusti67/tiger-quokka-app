@@ -165,10 +165,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: AppTheme.roseDeep.withValues(alpha: 0.1),
+                    color: AppTheme.roseDeep.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                     border: Border.all(
-                      color: AppTheme.roseDeep.withValues(alpha: 0.3),
+                      color: AppTheme.roseDeep.withOpacity(0.3),
                     ),
                   ),
                   child: Row(
@@ -254,10 +254,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: AppTheme.teal.withValues(alpha: 0.1),
+                    color: AppTheme.teal.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                     border: Border.all(
-                      color: AppTheme.teal.withValues(alpha: 0.3),
+                      color: AppTheme.teal.withOpacity(0.3),
                     ),
                   ),
                   child: Row(
@@ -368,11 +368,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   child: Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: AppTheme.primaryDeep.withValues(alpha: 0.3),
+                      color: AppTheme.primaryDeep.withOpacity(0.3),
                       borderRadius:
                           BorderRadius.circular(AppTheme.radiusMedium),
                       border: Border.all(
-                        color: AppTheme.goldPrimary.withValues(alpha: 0.3),
+                        color: AppTheme.goldPrimary.withOpacity(0.3),
                       ),
                     ),
                     child: Row(
@@ -380,7 +380,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         Container(
                           padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
-                            color: AppTheme.goldPrimary.withValues(alpha: 0.2),
+                            color: AppTheme.goldPrimary.withOpacity(0.2),
                             borderRadius:
                                 BorderRadius.circular(AppTheme.radiusSmall),
                           ),
@@ -430,7 +430,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             borderRadius:
                                 BorderRadius.circular(AppTheme.radiusSmall),
                             border: Border.all(
-                              color: AppTheme.goldPrimary.withValues(alpha: 0.3),
+                              color: AppTheme.goldPrimary.withOpacity(0.3),
                             ),
                           ),
                           child: Row(
@@ -448,7 +448,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               const SizedBox(width: 8),
                               Icon(
                                 Icons.edit,
-                                color: AppTheme.goldPrimary.withValues(alpha: 0.7),
+                                color: AppTheme.goldPrimary.withOpacity(0.7),
                                 size: 16,
                               ),
                             ],
@@ -494,7 +494,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             color: AppTheme.surfaceCard,
             borderRadius: BorderRadius.circular(AppTheme.radiusLarge),
             border: Border.all(
-              color: AppTheme.teal.withValues(alpha: 0.3),
+              color: AppTheme.teal.withOpacity(0.3),
             ),
           ),
           child: InkWell(
@@ -503,10 +503,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
             child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: AppTheme.primaryDeep.withValues(alpha: 0.3),
+                color: AppTheme.primaryDeep.withOpacity(0.3),
                 borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                 border: Border.all(
-                  color: AppTheme.teal.withValues(alpha: 0.3),
+                  color: AppTheme.teal.withOpacity(0.3),
                 ),
               ),
               child: Row(
@@ -542,7 +542,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                   Icon(
                     Icons.arrow_forward_ios,
-                    color: AppTheme.textMuted.withValues(alpha: 0.5),
+                    color: AppTheme.textMuted.withOpacity(0.5),
                     size: 16,
                   ),
                 ],
@@ -576,7 +576,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             color: AppTheme.surfaceCard,
             borderRadius: BorderRadius.circular(AppTheme.radiusLarge),
             border: Border.all(
-              color: AppTheme.roseDeep.withValues(alpha: 0.3),
+              color: AppTheme.roseDeep.withOpacity(0.3),
             ),
           ),
           child: Column(
@@ -588,10 +588,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 child: Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryDeep.withValues(alpha: 0.3),
+                    color: AppTheme.primaryDeep.withOpacity(0.3),
                     borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                     border: Border.all(
-                      color: AppTheme.textMuted.withValues(alpha: 0.3),
+                      color: AppTheme.textMuted.withOpacity(0.3),
                     ),
                   ),
                   child: Row(
@@ -631,7 +631,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       ),
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: AppTheme.textMuted.withValues(alpha: 0.5),
+                        color: AppTheme.textMuted.withOpacity(0.5),
                         size: 16,
                       ),
                     ],
@@ -645,10 +645,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 child: Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: AppTheme.roseDeep.withValues(alpha: 0.1),
+                    color: AppTheme.roseDeep.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                     border: Border.all(
-                      color: AppTheme.roseDeep.withValues(alpha: 0.3),
+                      color: AppTheme.roseDeep.withOpacity(0.3),
                     ),
                   ),
                   child: Row(
@@ -688,7 +688,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       ),
                       Icon(
                         Icons.arrow_forward_ios,
-                        color: AppTheme.roseDeep.withValues(alpha: 0.5),
+                        color: AppTheme.roseDeep.withOpacity(0.5),
                         size: 16,
                       ),
                     ],
@@ -908,7 +908,7 @@ class SettingsCard extends StatelessWidget {
         color: AppTheme.surfaceCard,
         borderRadius: BorderRadius.circular(AppTheme.radiusLarge),
         border: Border.all(
-          color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+          color: AppTheme.primaryMedium.withOpacity(0.3),
         ),
       ),
       child: Column(
@@ -919,10 +919,10 @@ class SettingsCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: iconColor.withValues(alpha: 0.2),
+                  color: iconColor.withOpacity(0.2),
                   borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                   border: Border.all(
-                    color: iconColor.withValues(alpha: 0.3),
+                    color: iconColor.withOpacity(0.3),
                   ),
                 ),
                 child: Icon(
@@ -984,12 +984,12 @@ class NotificationOption extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: AppTheme.primaryDeep.withValues(alpha: 0.3),
+        color: AppTheme.primaryDeep.withOpacity(0.3),
         borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
         border: Border.all(
           color: value
-              ? AppTheme.goldPrimary.withValues(alpha: 0.3)
-              : AppTheme.primaryMedium.withValues(alpha: 0.2),
+              ? AppTheme.goldPrimary.withOpacity(0.3)
+              : AppTheme.primaryMedium.withOpacity(0.2),
         ),
       ),
       child: Row(
@@ -1055,11 +1055,11 @@ class MysticalSwitch extends StatelessWidget {
         height: 30,
         decoration: BoxDecoration(
           color: value
-              ? activeColor.withValues(alpha: 0.3)
+              ? activeColor.withOpacity(0.3)
               : AppTheme.surfaceDark,
           borderRadius: BorderRadius.circular(15),
           border: Border.all(
-            color: value ? activeColor : AppTheme.primaryMedium.withValues(alpha: 0.3),
+            color: value ? activeColor : AppTheme.primaryMedium.withOpacity(0.3),
             width: 2,
           ),
         ),
@@ -1076,7 +1076,7 @@ class MysticalSwitch extends StatelessWidget {
               boxShadow: [
                 if (value)
                   BoxShadow(
-                    color: activeColor.withValues(alpha: 0.5),
+                    color: activeColor.withOpacity(0.5),
                     blurRadius: 8,
                     spreadRadius: 1,
                   ),
@@ -1123,7 +1123,7 @@ class MysticalDialog extends StatelessWidget {
           gradient: AppTheme.backgroundGradient,
           borderRadius: BorderRadius.circular(AppTheme.radiusLarge),
           border: Border.all(
-            color: iconColor.withValues(alpha: 0.3),
+            color: iconColor.withOpacity(0.3),
             width: 1.5,
           ),
         ),
@@ -1133,10 +1133,10 @@ class MysticalDialog extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: iconColor.withValues(alpha: 0.2),
+                color: iconColor.withOpacity(0.2),
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: iconColor.withValues(alpha: 0.3),
+                  color: iconColor.withOpacity(0.3),
                 ),
               ),
               child: Icon(
@@ -1171,7 +1171,7 @@ class MysticalDialog extends StatelessWidget {
                     style: OutlinedButton.styleFrom(
                       foregroundColor: AppTheme.textSecondary,
                       side: BorderSide(
-                        color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+                        color: AppTheme.primaryMedium.withOpacity(0.3),
                       ),
                       padding: const EdgeInsets.symmetric(vertical: 14),
                       shape: RoundedRectangleBorder(
