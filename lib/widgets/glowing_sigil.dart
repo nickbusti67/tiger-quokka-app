@@ -76,12 +76,12 @@ class _GlowingSigilState extends State<GlowingSigil>
             shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(
-                color: color.withValues(alpha: 0.4 * _pulseAnimation.value),
+                color: color.withOpacity( 0.4 * _pulseAnimation.value),
                 blurRadius: 30 * _pulseAnimation.value,
                 spreadRadius: 5 * _pulseAnimation.value,
               ),
               BoxShadow(
-                color: color.withValues(alpha: 0.2),
+                color: color.withOpacity( 0.2),
                 blurRadius: 60,
                 spreadRadius: 10,
               ),
@@ -96,7 +96,7 @@ class _GlowingSigilState extends State<GlowingSigil>
                 child: CustomPaint(
                   size: Size(widget.size, widget.size),
                   painter: _SigilRingPainter(
-                    color: color.withValues(alpha: 0.3),
+                    color: color.withOpacity( 0.3),
                     strokeWidth: 1.5,
                   ),
                 ),
@@ -108,7 +108,7 @@ class _GlowingSigilState extends State<GlowingSigil>
                 child: CustomPaint(
                   size: Size(widget.size * 0.75, widget.size * 0.75),
                   painter: _SigilRingPainter(
-                    color: color.withValues(alpha: 0.5),
+                    color: color.withOpacity( 0.5),
                     strokeWidth: 2,
                     dashed: true,
                   ),
@@ -125,8 +125,8 @@ class _GlowingSigilState extends State<GlowingSigil>
                     shape: BoxShape.circle,
                     gradient: RadialGradient(
                       colors: [
-                        color.withValues(alpha: 0.3),
-                        color.withValues(alpha: 0.1),
+                        color.withOpacity( 0.3),
+                        color.withOpacity( 0.1),
                         Colors.transparent,
                       ],
                       stops: const [0.0, 0.5, 1.0],
@@ -145,7 +145,7 @@ class _GlowingSigilState extends State<GlowingSigil>
                                   fontWeight: FontWeight.bold,
                                   shadows: [
                                     Shadow(
-                                      color: color.withValues(alpha: 0.5),
+                                      color: color.withOpacity( 0.5),
                                       blurRadius: 10,
                                     ),
                                   ],
@@ -164,7 +164,7 @@ class _GlowingSigilState extends State<GlowingSigil>
                               fontSize: widget.size * 0.25,
                               shadows: [
                                 Shadow(
-                                  color: color.withValues(alpha: 0.8),
+                                  color: color.withOpacity( 0.8),
                                   blurRadius: 15,
                                 ),
                               ],
@@ -249,7 +249,7 @@ class MysticalDivider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dividerColor = color ?? AppTheme.goldPrimary.withValues(alpha: 0.5);
+    final dividerColor = color ?? AppTheme.goldPrimary.withOpacity( 0.5);
     
     return SizedBox(
       width: width,
@@ -401,7 +401,7 @@ class _ParticlesPainter extends CustomPainter {
       final y = yOffset * size.height;
 
       final paint = Paint()
-        ..color = color.withValues(alpha: particle.opacity)
+        ..color = color.withOpacity( particle.opacity)
         ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2);
 
       canvas.drawCircle(Offset(x, y), particle.size, paint);
