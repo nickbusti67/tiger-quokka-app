@@ -67,7 +67,7 @@ class RitualPhaseCard extends StatelessWidget {
     final color = isActive
         ? AppTheme.goldPrimary
         : isCompleted
-            ? AppTheme.goldLight.withValues(alpha: 0.6)
+            ? AppTheme.goldLight.withOpacity( 0.6)
             : AppTheme.textMuted;
 
     return GestureDetector(
@@ -78,12 +78,12 @@ class RitualPhaseCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: isActive
               ? AppTheme.surfaceCard
-              : AppTheme.surfaceCard.withValues(alpha: 0.5),
+              : AppTheme.surfaceCard.withOpacity( 0.5),
           borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
           border: Border.all(
             color: isActive
-                ? AppTheme.goldPrimary.withValues(alpha: 0.5)
-                : AppTheme.primaryMedium.withValues(alpha: 0.2),
+                ? AppTheme.goldPrimary.withOpacity( 0.5)
+                : AppTheme.primaryMedium.withOpacity( 0.2),
             width: isActive ? 2 : 1,
           ),
           boxShadow: isActive ? AppTheme.subtleGlow : null,
@@ -95,9 +95,9 @@ class RitualPhaseCard extends StatelessWidget {
               height: 48,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: color.withValues(alpha: 0.1),
+                color: color.withOpacity( 0.1),
                 border: Border.all(
-                  color: color.withValues(alpha: 0.3),
+                  color: color.withOpacity( 0.3),
                   width: 1.5,
                 ),
               ),
@@ -123,7 +123,7 @@ class RitualPhaseCard extends StatelessWidget {
                   Text(
                     _subtitle,
                     style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: color.withValues(alpha: 0.7),
+                          color: color.withOpacity( 0.7),
                         ),
                   ),
                 ],
@@ -164,7 +164,7 @@ class PartnerStatusCard extends StatelessWidget {
         color: AppTheme.surfaceCard,
         borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
         border: Border.all(
-          color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+          color: AppTheme.primaryMedium.withOpacity( 0.3),
         ),
       ),
       child: Row(
@@ -188,7 +188,7 @@ class PartnerStatusCard extends StatelessWidget {
                       color: (user.role == UserRole.tigre
                               ? const Color(0xFFFF8C00)
                               : const Color(0xFF8B4513))
-                          .withValues(alpha: 0.3),
+                          .withOpacity( 0.3),
                       blurRadius: 12,
                       spreadRadius: 2,
                     ),
@@ -254,7 +254,7 @@ class PartnerStatusCard extends StatelessWidget {
                           child: CircularProgressIndicator(
                             strokeWidth: 2,
                             valueColor: AlwaysStoppedAnimation<Color>(
-                              AppTheme.goldPrimary.withValues(alpha: 0.5),
+                              AppTheme.goldPrimary.withOpacity( 0.5),
                             ),
                           ),
                         ),
@@ -301,11 +301,11 @@ class CodexPageCard extends StatelessWidget {
           color: AppTheme.surfaceCard,
           borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
           border: Border.all(
-            color: page.symbol.color.withValues(alpha: 0.3),
+            color: page.symbol.color.withOpacity( 0.3),
           ),
           boxShadow: [
             BoxShadow(
-              color: page.symbol.color.withValues(alpha: 0.1),
+              color: page.symbol.color.withOpacity( 0.1),
               blurRadius: 20,
               spreadRadius: 2,
             ),
@@ -349,10 +349,10 @@ class CodexPageCard extends StatelessWidget {
                     vertical: 6,
                   ),
                   decoration: BoxDecoration(
-                    color: page.symbol.color.withValues(alpha: 0.15),
+                    color: page.symbol.color.withOpacity( 0.15),
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      color: page.symbol.color.withValues(alpha: 0.3),
+                      color: page.symbol.color.withOpacity( 0.3),
                     ),
                   ),
                   child: Text(
@@ -410,7 +410,7 @@ class StatisticTile extends StatelessWidget {
         color: AppTheme.surfaceCard,
         borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
         border: Border.all(
-          color: tileColor.withValues(alpha: 0.2),
+          color: tileColor.withOpacity( 0.2),
         ),
       ),
       child: Column(
