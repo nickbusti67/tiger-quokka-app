@@ -111,12 +111,12 @@ class _InstantMessagePopupState extends State<InstantMessagePopup> {
           color: AppTheme.surfaceDark,
           borderRadius: BorderRadius.circular(24),
           border: Border.all(
-            color: AppTheme.goldPrimary.withValues(alpha: 0.3),
+            color: AppTheme.goldPrimary.withOpacity( 0.3),
             width: 2,
           ),
           boxShadow: [
             BoxShadow(
-              color: AppTheme.goldPrimary.withValues(alpha: 0.2),
+              color: AppTheme.goldPrimary.withOpacity( 0.2),
               blurRadius: 20,
               spreadRadius: 2,
             ),
@@ -134,7 +134,7 @@ class _InstantMessagePopupState extends State<InstantMessagePopup> {
                 ),
                 border: Border(
                   bottom: BorderSide(
-                    color: AppTheme.goldPrimary.withValues(alpha: 0.2),
+                    color: AppTheme.goldPrimary.withOpacity( 0.2),
                   ),
                 ),
               ),
@@ -143,7 +143,7 @@ class _InstantMessagePopupState extends State<InstantMessagePopup> {
                   Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      color: AppTheme.goldPrimary.withValues(alpha: 0.1),
+                      color: AppTheme.goldPrimary.withOpacity( 0.1),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: const Icon(
@@ -188,7 +188,7 @@ class _InstantMessagePopupState extends State<InstantMessagePopup> {
                           Icon(
                             Icons.chat_bubble_outline,
                             size: 64,
-                            color: AppTheme.textMuted.withValues(alpha: 0.3),
+                            color: AppTheme.textMuted.withOpacity( 0.3),
                           ),
                           const SizedBox(height: 16),
                           Text(
@@ -220,7 +220,7 @@ class _InstantMessagePopupState extends State<InstantMessagePopup> {
                 color: AppTheme.surfaceCard,
                 border: Border(
                   top: BorderSide(
-                    color: AppTheme.primaryMedium.withValues(alpha: 0.2),
+                    color: AppTheme.primaryMedium.withOpacity( 0.2),
                   ),
                 ),
               ),
@@ -233,7 +233,7 @@ class _InstantMessagePopupState extends State<InstantMessagePopup> {
                       decoration: InputDecoration(
                         hintText: 'Scrivi un messaggio breve...',
                         hintStyle: TextStyle(
-                          color: AppTheme.textMuted.withValues(alpha: 0.5),
+                          color: AppTheme.textMuted.withOpacity( 0.5),
                           fontSize: 14,
                         ),
                         filled: true,
@@ -241,13 +241,13 @@ class _InstantMessagePopupState extends State<InstantMessagePopup> {
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(16),
                           borderSide: BorderSide(
-                            color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+                            color: AppTheme.primaryMedium.withOpacity( 0.3),
                           ),
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(16),
                           borderSide: BorderSide(
-                            color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+                            color: AppTheme.primaryMedium.withOpacity( 0.3),
                           ),
                         ),
                         focusedBorder: OutlineInputBorder(
@@ -308,7 +308,7 @@ class _InstantMessagePopupState extends State<InstantMessagePopup> {
                   style: OutlinedButton.styleFrom(
                     foregroundColor: AppTheme.textSecondary,
                     side: BorderSide(
-                      color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+                      color: AppTheme.primaryMedium.withOpacity( 0.3),
                     ),
                     padding: const EdgeInsets.symmetric(vertical: 16),
                   ),
@@ -338,16 +338,16 @@ class _InstantMessagePopupState extends State<InstantMessagePopup> {
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           decoration: BoxDecoration(
             color: isPartner
-                ? AppTheme.primaryMedium.withValues(alpha: 0.2)
-                : AppTheme.goldPrimary.withValues(alpha: 0.2),
+                ? AppTheme.primaryMedium.withOpacity( 0.2)
+                : AppTheme.goldPrimary.withOpacity( 0.2),
             borderRadius: BorderRadius.circular(16).copyWith(
               bottomLeft: isPartner ? const Radius.circular(4) : null,
               bottomRight: !isPartner ? const Radius.circular(4) : null,
             ),
             border: Border.all(
               color: isPartner
-                  ? AppTheme.primaryMedium.withValues(alpha: 0.3)
-                  : AppTheme.goldPrimary.withValues(alpha: 0.3),
+                  ? AppTheme.primaryMedium.withOpacity( 0.3)
+                  : AppTheme.goldPrimary.withOpacity( 0.3),
             ),
           ),
           child: Column(
