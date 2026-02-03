@@ -262,7 +262,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
                     color: AppTheme.surfaceCard,
                     borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                     border: Border.all(
-                      color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+                      color: AppTheme.primaryMedium.withOpacity( 0.3),
                     ),
                   ),
                   child: Row(
@@ -347,7 +347,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
                     icon: const Icon(Icons.message_rounded),
                     tooltip: 'Messaggio Istantaneo',
                     style: IconButton.styleFrom(
-                      backgroundColor: AppTheme.goldPrimary.withValues(alpha: 0.2),
+                      backgroundColor: AppTheme.goldPrimary.withOpacity( 0.2),
                       foregroundColor: AppTheme.goldLight,
                       padding: const EdgeInsets.all(8),
                     ),
@@ -355,7 +355,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
                       .animate(onPlay: (controller) => controller.repeat())
                       .shimmer(
                         duration: 2000.ms,
-                        color: AppTheme.goldPrimary.withValues(alpha: 0.3),
+                        color: AppTheme.goldPrimary.withOpacity( 0.3),
                       ),
               ],
             ),
@@ -403,7 +403,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
           color: AppTheme.surfaceCard,
           borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
           border: Border.all(
-            color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+            color: AppTheme.primaryMedium.withOpacity( 0.3),
           ),
         ),
         child: Column(
@@ -411,7 +411,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
           children: [
             Icon(
               Icons.favorite_border,
-              color: AppTheme.goldPrimary.withValues(alpha: 0.5),
+              color: AppTheme.goldPrimary.withOpacity( 0.5),
               size: 32,
             ),
             const SizedBox(height: 8),
@@ -426,10 +426,10 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
               decoration: BoxDecoration(
-                color: AppTheme.goldPrimary.withValues(alpha: 0.2),
+                color: AppTheme.goldPrimary.withOpacity( 0.2),
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(
-                  color: AppTheme.goldPrimary.withValues(alpha: 0.5),
+                  color: AppTheme.goldPrimary.withOpacity( 0.5),
                 ),
               ),
               child: Row(
@@ -471,7 +471,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
               side: BorderSide(
-                color: AppTheme.goldPrimary.withValues(alpha: 0.3),
+                color: AppTheme.goldPrimary.withOpacity( 0.3),
               ),
             ),
             title: Column(
@@ -511,17 +511,17 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
                           color: AppTheme.textSecondary,
                         ),
                     filled: true,
-                    fillColor: AppTheme.surfaceDark.withValues(alpha: 0.5),
+                    fillColor: AppTheme.surfaceDark.withOpacity( 0.5),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                       borderSide: BorderSide(
-                        color: AppTheme.goldPrimary.withValues(alpha: 0.3),
+                        color: AppTheme.goldPrimary.withOpacity( 0.3),
                       ),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                       borderSide: BorderSide(
-                        color: AppTheme.goldPrimary.withValues(alpha: 0.3),
+                        color: AppTheme.goldPrimary.withOpacity( 0.3),
                       ),
                     ),
                     focusedBorder: OutlineInputBorder(
@@ -542,10 +542,10 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
                   Container(
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
-                      color: AppTheme.roseDeep.withValues(alpha: 0.2),
+                      color: AppTheme.roseDeep.withOpacity( 0.2),
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
-                        color: AppTheme.roseDeep.withValues(alpha: 0.5),
+                        color: AppTheme.roseDeep.withOpacity( 0.5),
                       ),
                     ),
                     child: Text(
@@ -656,7 +656,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
           side: BorderSide(
-            color: AppTheme.goldPrimary.withValues(alpha: 0.3),
+            color: AppTheme.goldPrimary.withOpacity( 0.3),
           ),
         ),
         title: Column(
@@ -753,12 +753,12 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
             end: Alignment.bottomRight,
             colors: [
               AppTheme.primaryDeep,
-              AppTheme.primaryMedium.withValues(alpha: 0.5),
+              AppTheme.primaryMedium.withOpacity( 0.5),
             ],
           ),
           borderRadius: BorderRadius.circular(AppTheme.radiusLarge),
           border: Border.all(
-            color: AppTheme.goldPrimary.withValues(alpha: 0.3),
+            color: AppTheme.goldPrimary.withOpacity( 0.3),
             width: 1.5,
           ),
           boxShadow: AppTheme.glowShadow,
@@ -779,10 +779,10 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
                           ),
                           margin: const EdgeInsets.only(bottom: 12),
                           decoration: BoxDecoration(
-                            color: AppTheme.goldPrimary.withValues(alpha: 0.2),
+                            color: AppTheme.goldPrimary.withOpacity( 0.2),
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(
-                              color: AppTheme.goldPrimary.withValues(alpha: 0.5),
+                              color: AppTheme.goldPrimary.withOpacity( 0.5),
                             ),
                           ),
                           child: Row(
@@ -847,7 +847,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
                       borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                       boxShadow: [
                         BoxShadow(
-                          color: AppTheme.goldPrimary.withValues(alpha: 0.4),
+                          color: AppTheme.goldPrimary.withOpacity( 0.4),
                           blurRadius: 16,
                           spreadRadius: 1,
                         ),
@@ -882,7 +882,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
                   color: AppTheme.surfaceCard,
                   borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                   border: Border.all(
-                    color: AppTheme.textMuted.withValues(alpha: 0.3),
+                    color: AppTheme.textMuted.withOpacity( 0.3),
                   ),
                 ),
                 child: Row(
@@ -983,7 +983,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
             color: AppTheme.surfaceCard,
             borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
             border: Border.all(
-              color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+              color: AppTheme.primaryMedium.withOpacity( 0.3),
             ),
           ),
           child: Column(
@@ -1075,7 +1075,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
         color: AppTheme.surfaceDark,
         border: Border(
           top: BorderSide(
-            color: AppTheme.primaryMedium.withValues(alpha: 0.3),
+            color: AppTheme.primaryMedium.withOpacity( 0.3),
           ),
         ),
       ),
@@ -1108,7 +1108,7 @@ class _RitualDashboardScreenState extends State<RitualDashboardScreen>
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         decoration: BoxDecoration(
           color: isSelected
-              ? AppTheme.goldPrimary.withValues(alpha: 0.15)
+              ? AppTheme.goldPrimary.withOpacity( 0.15)
               : Colors.transparent,
           borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
         ),
