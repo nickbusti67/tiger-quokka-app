@@ -260,7 +260,7 @@ class _CodexScreenState extends State<CodexScreen> {
         ),
         border: Border(
           top: BorderSide(
-            color: page.symbol.color.withOpacity( 0.5),
+            color: page.symbol.color.withOpacity(0.5),
             width: 2,
           ),
         ),
@@ -327,7 +327,7 @@ class _CodexScreenState extends State<CodexScreen> {
                     color: AppTheme.surfaceCard,
                     borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
                     border: Border.all(
-                      color: AppTheme.primaryMedium.withOpacity( 0.3),
+                      color: AppTheme.primaryMedium.withOpacity(0.3),
                     ),
                   ),
                   child: Text(
