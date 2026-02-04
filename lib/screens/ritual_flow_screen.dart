@@ -110,7 +110,7 @@ class _RitualFlowScreenState extends State<RitualFlowScreen>
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppTheme.radiusLarge),
           side: BorderSide(
-            color: AppTheme.goldPrimary.withOpacity( 0.3),
+            color: AppTheme.goldPrimary.withOpacity(0.3),
           ),
         ),
         child: Padding(
@@ -290,15 +290,15 @@ class _RitualFlowScreenState extends State<RitualFlowScreen>
                 shape: BoxShape.circle,
                 color: AppTheme.surfaceCard,
                 border: Border.all(
-                  color: AppTheme.goldPrimary.withValues(
-                    alpha: 0.3 + _pulseController.value * 0.3,
+                  color: AppTheme.goldPrimary.withOpacity(
+                    0.3 + _pulseController.value * 0.3,
                   ),
                   width: 2,
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: AppTheme.goldPrimary.withValues(
-                      alpha: 0.2 + _pulseController.value * 0.2,
+                    color: AppTheme.goldPrimary.withOpacity(
+                      0.2 + _pulseController.value * 0.2,
                     ),
                     blurRadius: 20 + _pulseController.value * 10,
                     spreadRadius: 2,
@@ -323,10 +323,10 @@ class _RitualFlowScreenState extends State<RitualFlowScreen>
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           decoration: BoxDecoration(
-            color: AppTheme.roseDeep.withOpacity( 0.2),
+            color: AppTheme.roseDeep.withOpacity(0.2),
             borderRadius: BorderRadius.circular(20),
             border: Border.all(
-              color: AppTheme.roseDeep.withOpacity( 0.3),
+              color: AppTheme.roseDeep.withOpacity(0.3),
             ),
           ),
           child: Row(
@@ -360,7 +360,7 @@ class _RitualFlowScreenState extends State<RitualFlowScreen>
             color: AppTheme.surfaceCard,
             borderRadius: BorderRadius.circular(AppTheme.radiusLarge),
             border: Border.all(
-              color: AppTheme.primaryMedium.withOpacity( 0.3),
+              color: AppTheme.primaryMedium.withOpacity(0.3),
             ),
             boxShadow: AppTheme.cardShadow,
           ),
@@ -389,7 +389,7 @@ class _RitualFlowScreenState extends State<RitualFlowScreen>
             color: AppTheme.surfaceCard,
             borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
             border: Border.all(
-              color: AppTheme.primaryMedium.withOpacity( 0.3),
+              color: AppTheme.primaryMedium.withOpacity(0.3),
             ),
           ),
           child: TextField(
@@ -473,7 +473,7 @@ class _RitualFlowScreenState extends State<RitualFlowScreen>
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(
-                    color: Colors.green.withOpacity( 0.5),
+                    color: Colors.green.withOpacity(0.5),
                     width: 3,
                   ),
                 ),
@@ -507,7 +507,7 @@ class _RitualFlowScreenState extends State<RitualFlowScreen>
             color: AppTheme.surfaceCard,
             borderRadius: BorderRadius.circular(AppTheme.radiusMedium),
             border: Border.all(
-              color: AppTheme.primaryMedium.withOpacity( 0.3),
+              color: AppTheme.primaryMedium.withOpacity(0.3),
             ),
           ),
           child: Column(
@@ -605,8 +605,8 @@ class _RitualFlowScreenState extends State<RitualFlowScreen>
                 color: AppTheme.surfaceCard,
                 border: Border.all(
                   color: hasAnswered
-                      ? Colors.green.withOpacity( 0.5)
-                      : AppTheme.primaryMedium.withOpacity( 0.3),
+                      ? Colors.green.withOpacity(0.5)
+                      : AppTheme.primaryMedium.withOpacity(0.3),
                   width: 2,
                 ),
               ),
@@ -698,7 +698,7 @@ class _RitualFlowScreenState extends State<RitualFlowScreen>
                 Container(
                   width: 60,
                   height: 1,
-                  color: AppTheme.goldPrimary.withOpacity( 0.3),
+                  color: AppTheme.goldPrimary.withOpacity(0.3),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -711,7 +711,7 @@ class _RitualFlowScreenState extends State<RitualFlowScreen>
                 Container(
                   width: 60,
                   height: 1,
-                  color: AppTheme.goldPrimary.withOpacity( 0.3),
+                  color: AppTheme.goldPrimary.withOpacity(0.3),
                 ),
               ],
             )
@@ -757,7 +757,7 @@ class _RitualFlowScreenState extends State<RitualFlowScreen>
         color: AppTheme.surfaceCard,
         borderRadius: BorderRadius.circular(AppTheme.radiusLarge),
         border: Border.all(
-          color: AppTheme.goldPrimary.withOpacity( 0.3),
+          color: AppTheme.goldPrimary.withOpacity(0.3),
         ),
         boxShadow: AppTheme.subtleGlow,
       ),
