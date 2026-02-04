@@ -75,7 +75,7 @@ class AppTheme {
   // === Shadows ===
   static List<BoxShadow> get cardShadow => [
     BoxShadow(
-      color: primaryDark.withValues(alpha: 0.5),
+      color: primaryDark.withOpacity(0.5),
       blurRadius: 20,
       offset: const Offset(0, 8),
     ),
@@ -83,7 +83,7 @@ class AppTheme {
   
   static List<BoxShadow> get glowShadow => [
     BoxShadow(
-      color: goldPrimary.withValues(alpha: 0.3),
+      color: goldPrimary.withOpacity(0.3),
       blurRadius: 30,
       spreadRadius: 2,
     ),
@@ -91,7 +91,7 @@ class AppTheme {
   
   static List<BoxShadow> get subtleGlow => [
     BoxShadow(
-      color: goldPrimary.withValues(alpha: 0.15),
+      color: goldPrimary.withOpacity(0.15),
       blurRadius: 15,
       spreadRadius: 1,
     ),
@@ -207,7 +207,7 @@ class AppTheme {
       elevation: 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(radiusMedium),
-        side: BorderSide(color: primaryMedium.withValues(alpha: 0.3)),
+        side: BorderSide(color: primaryMedium.withOpacity(0.3)),
       ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
@@ -247,11 +247,11 @@ class AppTheme {
       contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(radiusMedium),
-        borderSide: BorderSide(color: primaryMedium.withValues(alpha: 0.3)),
+        borderSide: BorderSide(color: primaryMedium.withOpacity(0.3)),
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(radiusMedium),
-        borderSide: BorderSide(color: primaryMedium.withValues(alpha: 0.3)),
+        borderSide: BorderSide(color: primaryMedium.withOpacity(0.3)),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(radiusMedium),
@@ -271,7 +271,7 @@ class AppTheme {
       size: 24,
     ),
     dividerTheme: DividerThemeData(
-      color: primaryMedium.withValues(alpha: 0.3),
+      color: primaryMedium.withOpacity(0.3),
       thickness: 1,
     ),
   );
